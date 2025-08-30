@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="site-title"></title>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -14,114 +16,193 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2021497871700311');
+fbq('init', '2124666788059737');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2021497871700311&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=2124666788059737&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEHTA IS BACK Official</title>
-    <style>
-        body{
-            background: url("https://blogger.googleusercontent.com/img/a/AVvXsEg4iJPdwxPIwNvb-Ek-eaRWVA7YeJT5US6dJvF9Him4UTJNOkwo6PFw1crH4uNtJUvg6UhQ8pzDpfdkl6s-TQQB19Q16mKe6f-MxSnHUyJnfn8BVa3oUwGQDrxsbmxdJYbUBkkdYduH2MWqMcbC-XeedZNsWAch31OOp6OkRFMAoYr6SGNDBMAnw0UifDw");
-            background-repeat: no-repeat;
-            background-size: 100% 130%;
-            color: white;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
 
-      .heading{
-        text-align: center;
-      }
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        .counter {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 30px;
-            padding: 20px;
-        }
-
-        .container img {
-            border-radius: 50%;
-            width: 200px;
-            padding-bottom: 20px;
-        }
-
-        .btn {
-            animation-name: pulseBtn;
-            -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-            -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-            -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-            -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-            background: linear-gradient(45deg, #5149ff, #ff8a73, #ff73e1, #49ffcc);
-            background-size: 200% 200%;
-            animation: bg-animation 5s ease infinite;
-            color: white;
-            padding: 20px 50px;
-            border-radius: 40px;
-            font-size: 20px;
-            font-weight: bold;
-            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
-            transition: all 0.4s ease-in-out;
-            position: relative;
-            z-index: 1;
-            cursor: pointer;
-        }
-
-        @media(max-width:568px){
-            p{
-                text-align: center;
-                font-size: 9px;
-            }
-        }
-    </style>
-
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0; padding: 0;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #fff;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    }
+    .glass-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 40px 25px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
+      max-width: 650px;
+      width: 100%;
+    }
+    .logo img {
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      border: 3px solid #ffcc00;
+      object-fit: cover;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .logo img:hover {
+      transform: scale(1.08);
+    }
+    h1 {
+      font-weight: 700;
+      color: #ffcc00;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .crown {
+      color: gold;
+      animation: shine 2s infinite linear;
+    }
+    @keyframes shine {
+      0% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.3); }
+      100% { opacity: 0.6; transform: scale(1); }
+    }
+    h2 {
+      font-weight: 600;
+      margin-top: 30px;
+      color: #00ffb3;
+    }
+    p {
+      color: #ddd;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    a.cta-btn {
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+      padding: 14px 40px;
+      border-radius: 50px;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+      display: inline-block;
+      margin: 18px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0,198,255,0.7); }
+      70% { box-shadow: 0 0 0 20px rgba(0,198,255,0); }
+      100% { box-shadow: 0 0 0 0 rgba(0,198,255,0); }
+    }
+    .highlight {
+      color: #00ff88;
+      font-weight: 600;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.08);
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .benefit-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 12px;
+      border-radius: 12px;
+      text-align: left;
+      font-size: 15px;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <h1 class="heading">MEHTA IS BACK </h1>
-        <span style="font-weight: bold; text-align: center;">MEHTA IS BACK (Official) : Your #1 Trading Source 🔥</span>
-        <div class="blink back counter"><span id="countdown">59</span><span style="font-size: 15px;"
-                class="blink">SECONDS</span>
-        </div>
-        <img src="image.png"
-            alt="logo">
-        <a href="https://t.me/+elsyLUoUfZVhOGZl" target="_blank"><button class="btn">JOIN NOW FOR FREE</button></a>
-        <span style="margin-top: 45px; text-align: center;">Best Signals, Best Results</span>
-        <span style="margin-bottom: 20px; text-align: center;">The Best Trading Channel 💹</span>
-        <p>Disclaimer: This channel is for educational and informational purposes only. We do not provide investment advice or guaranteed returns. Trading in the stock market involves risk. Please consult your financial advisor before making any investment decisions.</p>
-        <p style="text-align: center; font-size: 12px;"><span style="color: #ffffff;"><strong>This Channel Advertise By <a target="_blank" href="https://wa.me/+919532473116"><span style="color: #ffff00; animation: blink 1s infinite;">Shiviadsagency</span></a></strong></span></p>
+
+  <!-- ✅ Easy Variables -->
+  <script>
+    const SITE_NAME = "𝗠𝗘𝗛𝗧𝗔 𝗜𝗦 𝗕𝗔𝗖𝗞 (𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟)™️";       // 🔄 Brand Name
+    const SITE_IMAGE = "mehtaa.jpg";              // 🔄 Logo/Image path or URL
+    const TELEGRAM_LINK = "https://t.me/+elsyLUoUfZVhOGZl"; // 🔄 Telegram Link / Website Link
+  </script>
+
+  <section class="hero">
+    <div class="glass-box">
+      <div class="logo">
+        <img id="site-logo" alt="Brand Logo">
+      </div>
+      <h1 id="site-heading"></h1>
+      <p>✅ Trusted by thousands of learners</p>
+
+      <div class="stats">
+        <div class="stat-box">24/7 Updates</div>
+        <div class="stat-box">Free to Join</div>
+      </div>
+
+      <a id="cta-btn-1" class="cta-btn">
+        <i class="fa-brands fa-telegram me-1"></i> Join on Telegram
+      </a>
+
+      <div class="benefits">
+        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Market Insights & Discussions</div>
+        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Learn with Experts</div>
+        <div class="benefit-card"><i class="fa-solid fa-check-circle highlight"></i> Practical Strategies</div>
+      </div>
+
+      <a id="cta-btn-2" class="cta-btn">
+        <i class="fa-brands fa-telegram me-1"></i> Join Now
+      </a>
+
+      <h2>⚡ Stay Ahead with Knowledge ⚡</h2>
+      <footer>Powered by <span class="highlight">Mahadev Marketing Agency</span></footer>
     </div>
+  </section>
 
-
-    <script>
-        let remainingSeconds = 60;
-        function updateCountdown() {
-            document.getElementById("countdown").innerHTML = `${remainingSeconds}`;
-            remainingSeconds -= 1;
-            if (remainingSeconds < 0) {
-                remainingSeconds = 60;
-            }
-        }
-        updateCountdown();
-        const countdownInterval = setInterval(updateCountdown, 1000);
-    </script>
+  <!-- Auto Apply Variables -->
+  <script>
+    document.getElementById("site-title").innerText = SITE_NAME;
+    document.getElementById("site-heading").innerHTML = 
+      `<i class="fa-solid fa-crown crown"></i> ${SITE_NAME} <i class="fa-solid fa-crown crown"></i>`;
+    document.getElementById("site-logo").src = SITE_IMAGE;
+    document.getElementById("cta-btn-1").href = TELEGRAM_LINK;
+    document.getElementById("cta-btn-2").href = TELEGRAM_LINK;
+  </script>
 
 </body>
-
-
-
 </html>
